@@ -1,0 +1,3 @@
+include ':ConfusePlus'
+include ':app'
+rootProject.name = "GradlePlugin-Public"

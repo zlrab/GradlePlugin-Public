@@ -1,0 +1,219 @@
+{
+  "MatchOperationRules": {
+    "component": [
+      "com.android*"
+    ],
+    "component": [
+      "com.android*"
+    ],
+    "customView": [
+      "*"
+    ]
+  },
+  "whitelist": {
+    "component": [
+      "com.zlrab.DemoActivity"
+    ],
+    "customView": [
+      "com.zlrab.DemoView"
+    ]
+  },
+  "packageClassDictionary": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z"
+  ],
+  "methodNameDictionary": [
+    "example",
+    "TODO"
+  ],
+  "encryptedString": {
+    "encryptedStringToolJarPath": "",
+    "encryptionToolClass": [
+      {
+        "key": "",
+        "encodeClassName": "com.android.EncryptUtils1",
+        "encodeMethodName": "encodeAny1",
+        "decodeClassName": "com.android.EncryptUtils1",
+        "decodeMethodName": "decodeAny1",
+        "autoRemoveEncodeMethod": "true"
+      },
+      {
+        "key": "",
+        "encodeClassName": "com.android.EncryptTool2",
+        "encodeMethodName": "encodeAny2",
+        "decodeClassName": "com.android.EncryptTool2",
+        "decodeMethodName": "decodeAny2",
+        "autoRemoveEncodeMethod": "true"
+      },
+      {
+        "key": "",
+        "encodeClassName": "com.android.myapplication.EncryptUtils3",
+        "encodeMethodName": "encodeAny3",
+        "decodeClassName": "com.android.myapplication.EncryptUtils3",
+        "decodeMethodName": "decodeAny3",
+        "autoRemoveEncodeMethod": "true",
+        "byteKeyName": "DATA"
+      }
+    ]
+  },
+  "confuseClassRules": {
+    "match": [
+      {
+        "classNameRules": "com/android/EncryptUtils1",
+        "methods": [
+          {
+            "access": 9,
+            "name": "encodeAny1",
+            "descriptor": "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+            "action": "remove"
+          },
+          {
+            "access": 9,
+            "name": "decodeAny1",
+            "descriptor": "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+            "action": "confuse"
+          }
+        ]
+      },
+      {
+        "classNameRules": "com/android/EncryptTool2",
+        "methods": [
+          {
+            "access": 9,
+            "name": "encodeAny2",
+            "descriptor": "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+            "action": "remove"
+          },
+          {
+            "access": 9,
+            "name": "decodeAny2",
+            "descriptor": "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+            "action": "confuse"
+          }
+        ]
+      },
+      {
+        "classNameRules": "com/android/lib/impl/Main$sa",
+        "methods": [
+          {
+            "access": 9,
+            "name": "encodeAny2",
+            "descriptor": "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+            "action": "remove"
+          }
+        ]
+      },
+      {
+        "classNameRules": "com/android/lib/impl/Main$sa$se",
+        "methods": [
+          {
+            "access": 9,
+            "name": "encodeAny2",
+            "descriptor": "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+            "action": "remove"
+          }
+        ]
+      },
+      {
+        "classNameRules": "com/android/lib/impl/Main$sa$st",
+        "methods": [
+          {
+            "access": 9,
+            "name": "encodeAny2",
+            "descriptor": "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+            "action": "remove"
+          }
+        ]
+      },
+      {
+        "classNameRules": "com/android/lib/impl/Main$sb",
+        "methods": [
+          {
+            "access": 9,
+            "name": "encodeAny2",
+            "descriptor": "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+            "action": "remove"
+          }
+        ]
+      },
+      {
+        "classNameRules": "com/android/lib/impl/Main$sc",
+        "methods": [
+          {
+            "access": 9,
+            "name": "encodeAny2",
+            "descriptor": "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+            "action": "remove"
+          }
+        ]
+      },
+      {
+        "classNameRules": "com/android/lib/impl/Main$sm",
+        "methods": [
+          {
+            "access": 9,
+            "name": "encodeAny2",
+            "descriptor": "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+            "action": "remove"
+          }
+        ]
+      },
+      {
+        "classNameRules": "com/android/lib/impl/Main$st",
+        "methods": [
+          {
+            "access": 9,
+            "name": "encodeAny2",
+            "descriptor": "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+            "action": "remove"
+          }
+        ]
+      }
+    ],
+    "whitelist": [
+      "com/zlrab/Demo"
+    ]
+  },
+  "removeClassRules": {
+    "match": [
+      "android.util.Base64"
+    ],
+    "whitelist": [
+      "com/zlrab/Demo"
+    ]
+  },
+  "confuseResName": {
+    "prefix": "",
+    "match": [
+      "*"
+    ],
+    "whitelist": [
+      "R.string.keep_*",
+      "R.style.demo"
+    ]
+  }
+}
